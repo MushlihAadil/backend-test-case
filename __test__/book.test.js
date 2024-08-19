@@ -17,7 +17,6 @@ beforeAll(async () => {
   }
 });
 
-// TESTING NIH
 describe("GET/books", () => {
   describe("Success get all books", () => {
     test("Status 200", async () => {
