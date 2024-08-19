@@ -6,7 +6,6 @@ const cors = require("cors");
 const express = require("express");
 const router = require("./routes/index.js");
 const app = express();
-const port = 3000;
 const swaggerUi = require("swagger-ui-express");
 const swaggerConfig = require("./utils/swaggerConfig.js");
 const errorHandler = require("./middlewares/errorHandlers.js");
@@ -27,6 +26,4 @@ app.use(errorHandler)
 // SwaggerAPI
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerConfig));
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+module.exports = app
