@@ -1,0 +1,29 @@
+{
+  "name": "backend-test-case",
+  "version": "1.0.0",
+  "description": "- Member\r - Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "migrate": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
